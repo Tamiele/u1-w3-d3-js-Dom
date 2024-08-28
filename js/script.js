@@ -26,7 +26,7 @@ const creatLi = function () {
     };
 
     itemLi.onclick = () => {
-      itemLi.classList.toggle("lineThrough");
+      itemLi.classList.toggle("lineThrough"); //creo una classe che vado a richiamare nel css
     };
   }
 };
