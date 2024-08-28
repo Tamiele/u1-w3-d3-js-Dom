@@ -1,35 +1,79 @@
 body {
   margin: 1rem;
   box-sizing: border-box;
-  background-color: rgb(30, 124, 124);
+  background: beige;
   width: 100%;
   height: 100%;
   background-size: cover;
+  display: inline-block;
+  text-align: center;
   display: inline-block;
 }
 
 .titolo {
   text-align: center;
+  font-size: 3rem;
 }
 form {
   margin-block: 1rem;
-  text-align: center;
-  background-color: white;
-  margin-inline: 30rem;
+  margin-inline: 10rem;
   padding-block: 2rem;
   border-radius: 2%;
 }
+#task-input {
+  width: 50%;
+  height: 45px;
+  font-family: "helvetica", sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid #373c3e;
+  padding: 12px;
+  color: #111111;
+  border-radius: 5px;
+}
+
+#task-bottone {
+  margin-inline: 7px;
+  position: relative;
+  width: 20%;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
 #ol {
   text-align: start;
+  list-style-type: none;
 }
 .item-li {
-  border: solid thin black;
-  background-color: rgba(255, 217, 0, 0.333);
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 45%;
+  height: 50px;
+  background-color: #69a9b4;
+  color: white;
+  border: 1px solid #373c3e;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 8rem;
+  cursor: pointer;
 }
 .del-button {
-  text-align: end;
-  margin-left: 3rem;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  font-size: 22px;
+  color: black;
+  height: 35px;
+  width: 90px;
+  border-radius: 5px;
+  margin-left: 1rem;
+  cursor: pointer;
 }
+
 .lineThrough {
-  text-decoration: line-through red;
+  text-decoration: line-through red; /* crea una riga sul testo come ad eliminare */
 }

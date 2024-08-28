@@ -12,6 +12,9 @@ const creatLi = function () {
     const itemLi = document.createElement("li"); //creo la lista
     itemLi.innerText = inputValue; //cosi gli dico che il valore di li è uguale al valore inserito nell'input dall'utente
     itemLi.classList = "item-li"; // do una classe alla li
+    itemLi.onclick = () => {
+      itemLi.classList.toggle("lineThrough"); //creo una classe che vado a richiamare nel css
+    };
 
     const orderList = document.getElementById("ol"); //richiamo la orderlist
     orderList.appendChild(itemLi); //appendo li alla orderlist
@@ -20,14 +23,13 @@ const creatLi = function () {
     itemLi.appendChild(delButton); //appendo il bottone alla li
     delButton.innerText = "delete"; //nome al bottone
     delButton.classList = "del-button";
+    //funzione che permette di cliccare sul bottone ed eliminare la li che si crea
     delButton.onclick = function (event) {
-      //funzione che permette di cliccare sul bottone ed eliminare la li che si crea
       event.currentTarget.parentNode.remove();
     };
-
-    itemLi.onclick = () => {
-      itemLi.classList.toggle("lineThrough"); //creo una classe che vado a richiamare nel css
-    };
+  } else {
+    alert("Devi inserire una Task!");
+    input.focus();
   }
 };
 addButton.addEventListener("click", creatLi);
