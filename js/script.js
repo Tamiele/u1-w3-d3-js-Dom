@@ -21,14 +21,14 @@ const creatLi = function () {
 
     const delButton = document.createElement("button"); //creo un bottone per eliminare le eventuali li create
     itemLi.appendChild(delButton); //appendo il bottone alla li
-    delButton.innerText = "delete"; //nome al bottone
+    delButton.innerText = "Delete"; //nome al bottone
     delButton.classList = "del-button";
     //funzione che permette di cliccare sul bottone ed eliminare la li che si crea
     delButton.onclick = function (event) {
       event.currentTarget.parentNode.remove();
     };
   } else {
-    alert("Devi inserire una Task!");
+    alert("Devi inserire una Task!"); //crea un alert nel web che avvisa l'utente di digitare un testo
     input.focus();
   }
 };

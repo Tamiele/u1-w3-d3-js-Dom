@@ -1,5 +1,4 @@
 body {
-  margin: 1rem;
   box-sizing: border-box;
   background: beige;
   width: 100%;
@@ -7,7 +6,6 @@ body {
   background-size: cover;
   display: inline-block;
   text-align: center;
-  display: inline-block;
 }
 
 .titolo {
@@ -15,13 +13,16 @@ body {
   font-size: 3rem;
 }
 form {
+  height: 100%;
+  width: 100%;
   margin-block: 1rem;
-  margin-inline: 10rem;
   padding-block: 2rem;
   border-radius: 2%;
+  display: inline-block;
+  margin: 0;
 }
 #task-input {
-  width: 50%;
+  width: 52%;
   height: 45px;
   font-family: "helvetica", sans-serif;
   font-size: 1.2rem;
@@ -50,9 +51,11 @@ form {
   list-style-type: none;
 }
 .item-li {
+  justify-content: space-between;
+  display: flex;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 45%;
+  width: 53%;
   height: 50px;
   background-color: #69a9b4;
   color: white;
