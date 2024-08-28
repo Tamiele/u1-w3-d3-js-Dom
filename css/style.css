@@ -1,15 +1,35 @@
 body {
   margin: 1rem;
   box-sizing: border-box;
-  border-color: rgb(43, 142, 142);
+  background-color: rgb(30, 124, 124);
   width: 100%;
   height: 100%;
+  background-size: cover;
+  display: inline-block;
 }
 
 .titolo {
   text-align: center;
 }
 form {
+  margin-block: 1rem;
   text-align: center;
   background-color: white;
+  margin-inline: 30rem;
+  padding-block: 2rem;
+  border-radius: 2%;
+}
+#ol {
+  text-align: start;
+}
+.item-li {
+  border: solid thin black;
+  background-color: rgba(255, 217, 0, 0.333);
+}
+.del-button {
+  text-align: end;
+  margin-left: 3rem;
+}
+.lineThrough {
+  text-decoration: line-through red;
 }
